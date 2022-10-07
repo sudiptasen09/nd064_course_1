@@ -1,11 +1,59 @@
 ## Docker commands used to build the application 
-# TODO: insert the docker build command
+docker build -t techtrends .
 
 ## Docker commands used to run the application
-# TODO: insert the docker run command
+docker run -d -p 7111:3111 techtrends
 
 ## Docker commands used to get the application logs
-# TODO: insert the docker logs command
+docker logs fbdc2900a975b6aa6c70b0aa51d6060b7154d5dd39fdfe41bc6565b5cc435a84
 
 ## Logs from the container running the TechTrends application
 # TODO: paste logs from the Docker container 
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+172.17.0.1 - - [07/Oct/2022 10:05:11] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:05:11] "GET /static/css/main.css HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:05:12] "GET /favicon.ico HTTP/1.1" 404 -
+The "About Us" page is retrieved.
+[2022-10-07 10:11:14,422] INFO in app: The "About Us" page is retrieved.
+172.17.0.1 - - [07/Oct/2022 10:11:14] "GET /about HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:11:14] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [07/Oct/2022 10:11:18] "GET /create HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:11:18] "GET /static/css/main.css HTTP/1.1" 304 -
+A new article is created.The title is Hello
+[2022-10-07 10:11:28,440] INFO in app: A new article is created.The title is Hello
+172.17.0.1 - - [07/Oct/2022 10:11:28] "POST /create HTTP/1.1" 302 -
+172.17.0.1 - - [07/Oct/2022 10:11:28] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:11:28] "GET /static/css/main.css HTTP/1.1" 304 -
+[2022-10-07 10:11:31,606] INFO in app: An existing article is retrieved.Article title is KubeCon + CloudNativeCon 2021
+An existing article is retrieved.Article title is KubeCon + CloudNativeCon 2021
+172.17.0.1 - - [07/Oct/2022 10:11:31] "GET /2 HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:11:31] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [07/Oct/2022 10:11:36] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:11:36] "GET /static/css/main.css HTTP/1.1" 304 -
+An existing article is retrieved.Article title is Kubernetes v1.20 Release Notes
+[2022-10-07 10:11:40,894] INFO in app: An existing article is retrieved.Article title is Kubernetes v1.20 Release Notes
+172.17.0.1 - - [07/Oct/2022 10:11:40] "GET /3 HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:11:40] "GET /static/css/main.css HTTP/1.1" 304 -
+A non-existing article is accessed and a 404 page is returned.
+[2022-10-07 10:11:47,489] INFO in app: A non-existing article is accessed and a 404 page is returned.
+172.17.0.1 - - [07/Oct/2022 10:11:47] "GET /23 HTTP/1.1" 404 -
+172.17.0.1 - - [07/Oct/2022 10:11:47] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [07/Oct/2022 10:11:50] "GET /create HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:11:50] "GET /static/css/main.css HTTP/1.1" 304 -
+[2022-10-07 10:11:53,346] INFO in app: The "About Us" page is retrieved.
+The "About Us" page is retrieved.
+172.17.0.1 - - [07/Oct/2022 10:11:53] "GET /about HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:11:53] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [07/Oct/2022 10:11:56] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:11:56] "GET /static/css/main.css HTTP/1.1" 304 -
+An existing article is retrieved.Article title is CNCF Cloud Native Interactive Landscape
+[2022-10-07 10:12:00,805] INFO in app: An existing article is retrieved.Article title is CNCF Cloud Native Interactive Landscape
+172.17.0.1 - - [07/Oct/2022 10:12:00] "GET /4 HTTP/1.1" 200 -
+172.17.0.1 - - [07/Oct/2022 10:12:00] "GET /static/css/main.css HTTP/1.1" 304 -

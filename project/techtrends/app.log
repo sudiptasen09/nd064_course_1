@@ -1,0 +1,11 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.147.13.212:3111/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.147.13.212:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:10.147.13.212 - - [07/Oct/2022 11:46:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.147.13.212 - - [07/Oct/2022 11:46:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:An existing article is retrieved.Article title is 2020 CNCF Annual Report
+INFO:werkzeug:10.147.13.212 - - [07/Oct/2022 11:47:02] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:10.147.13.212 - - [07/Oct/2022 11:47:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
